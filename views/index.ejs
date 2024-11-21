@@ -15,9 +15,13 @@
             <span>
                 by <%= message.user %>
             </span>
+            <a href='/messages/<%= message.user %>'>
+                Show related messages
+            </a><br>
             <span>
                 (<%= message.added %>)
             </span>   
+            
         </div>
     <% }) %>
 </body>
